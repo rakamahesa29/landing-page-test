@@ -1,0 +1,321 @@
+
+/* reset css */
+body {
+    background-color: #ececec;
+}
+div, span, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.header-bg {
+    min-height: 400px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.medsosicon {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.logo {
+    margin-bottom: 30px;
+}
+.medsoslist {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+.sparator {
+    border-bottom: 2px solid #FFFFFF;
+    display: block;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.sparator:hover {
+    background-color: #3977b2c2;
+}
+.medsoslist li {
+    list-style: none;
+    padding: 1px;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    background-color: #3977b2;
+    mask-image: url('/assets/images/header.jpg');
+}
+.medsoslist li:hover {
+    border: 2px solid #ffffffc0;
+}
+.medsoslist li i {
+    font-size: 24px;
+    padding: 10px;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.medsoslist li i:hover {
+    border: 1px solid #ffffffc0;
+    color: #ffffffc0;
+}
+/* nav menu */
+.navbar {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 30px 0px;
+    background-color: #FFFFFF;
+}
+.search-bar {
+    position: absolute;
+    right: 50px;
+}
+.navbar-menu {
+    display: flex;
+    gap: 20px;
+}
+.navbar-menu a {
+    font-size: 14px;
+    color: #383838;
+    font-weight: 700;
+    font-style: none;
+    text-transform: none;
+    text-decoration: none;
+}
+.navbar-menu a:hover {
+    color: #383838b6;
+}
+.search-bar .form-searchbar {
+    display: flex;
+    align-items: center;
+}
+.search-bar form input {
+    padding-left: 10px;
+    font-style: italic;
+    font-size: 12px;
+    outline: none;
+    border: none;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 1000;
+}
+/* card */
+.container.gallery {
+    padding-top: 50px;
+}
+.card {
+    position: relative;
+    height: 350px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+.content-card {
+    border: 2px solid #383838;
+    padding: 10px;
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+}
+.content-item {
+    background-color: #383838;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+}
+.content-item:hover {
+    background-color: #383838b6;
+}
+.content-card:hover {
+    border: 2px solid #383838b6;
+}
+.content-item .tagline {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.content-item .title h1 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+.content-item .date p {
+    font-size: 11px;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 0px;
+}
+
+/* responsive */
+@media screen and (min-width:992px) and (max-width:1024px) {
+
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+    .logo img {
+        width: 260px;
+        
+    }
+    .medsoslist li i {
+        font-size: 18px;
+    }
+    .col-header,
+    .col-navbar {
+        padding: 0px;
+    }
+    .medsoslist {
+        gap: 10px;
+    }
+    .sparator {
+        width: 70%;
+    }
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar-menu a,
+    .search-bar form input {
+        font-size: 14px;
+    }
+    .navbar-menu {
+        margin-bottom: 30px;
+    }
+    .search-bar {
+        position: relative;
+        right: initial;
+        left: 0px;
+    }
+    
+
+}
+@media screen and (min-width:524px) and (max-width:767px) {
+    .logo img {
+        width: 260px;
+        
+    }
+    .medsoslist li i {
+        font-size: 14px;
+    }
+    .col-header,
+    .col-navbar {
+        padding: 0px;
+    }
+    .medsoslist {
+        gap: 10px;
+    }
+    .sparator {
+        width: 70%;
+    }
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar-menu a,
+    .search-bar form input {
+        font-size: 11px;
+    }
+    .navbar-menu {
+        margin-bottom: 30px;
+    }
+    .search-bar {
+        position: relative;
+        right: initial;
+        left: 0px;
+    }
+    
+}
+@media screen and (min-width: 321px) and (max-width:523px) {
+    .logo img {
+        width: 260px;
+        
+    }
+    .medsoslist li i {
+        font-size: 14px;
+    }
+    .col-header,
+    .col-navbar {
+        padding: 0px;
+    }
+    .medsoslist {
+        gap: 10px;
+    }
+    .sparator {
+        width: 70%;
+    }
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar-menu a,
+    .search-bar form input {
+        font-size: 11px;
+    }
+    .navbar-menu {
+        margin-bottom: 30px;
+    }
+    .search-bar {
+        position: relative;
+        right: initial;
+        left: 0px;
+    }
+}
+@media screen and (min-width: 280px) and (max-width: 320px) {
+    .logo img {
+        width: 260px;
+        
+    }
+    .medsoslist li i {
+        font-size: 14px;
+    }
+    .col-header,
+    .col-navbar {
+        padding: 0px;
+    }
+    .medsoslist {
+        gap: 10px;
+    }
+    .sparator {
+        width: 70%;
+    }
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar-menu a,
+    .search-bar form input {
+        font-size: 10px;
+    }
+    .navbar-menu {
+        margin-bottom: 30px;
+    }
+    .search-bar {
+        position: relative;
+        right: initial;
+        left: 0px;
+    }
+    .content-item .title h1 {
+        font-size: 14px;
+    }
+}
